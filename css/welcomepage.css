@@ -1,0 +1,136 @@
+html,
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+.sections {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.sections::-webkit-scrollbar {
+    display: none;
+}
+
+.section {
+    height: 100vh;
+    padding: 0 5% 0 5%;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+    color: #fff;
+    margin: auto;
+}
+
+.section:nth-child(1) {
+    background-color: #35329a;
+}
+
+.section:nth-child(2) {
+    background-color: rgba(197, 29, 93, 0.99);
+}
+
+.section:nth-child(3) {
+    background-image: url(../img/bodybackground2.jpg);
+    background-size: cover;
+    background-position: top left;
+    font-size: 3vh;
+}
+
+div #bgForButtons {
+    background: rgba(0, 0, 0, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(117, 113, 113, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(134, 134, 134, 0.18);
+    border-radius: 25px;
+    padding: 25px 30px;
+}
+
+.login-button {
+    background-color: #35329a;
+    border: none;
+    width: 30vh;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.3vh;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+.register-button {
+    background-color: #2c2b2b;
+    border: none;
+    width: 30vh;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.3vh;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 3vh;
+    margin: 0 0 1vh 0;
+}
+
+.form {
+    margin: 3vh auto;
+    display: block;
+    background: rgba( 0, 0, 0, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba(117, 113, 113, 0.37);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border: 1px solid rgba(134, 134, 134, 0.18);
+    border-radius: 25px;
+    padding: 25px 30px;
+    width: 45vh;
+    input:not([type="submit"]) {
+        background-color: #00000000;
+        border: 1px solid #454545;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 2.3vh;
+        margin: 0 0 5px 0;
+        padding: 3px 0 3px 5px;
+        width: 100%;
+    }
+}
+
+a #guest {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2vh;
+    color: #fff;
+}
+
+.submit-button {
+    background-color: #35329a;
+    border: none;
+    width: 20vh;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vh;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 9px;
+}
